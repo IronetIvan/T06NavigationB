@@ -1,6 +1,9 @@
 package com.borja.t06navigation.utils;
 
+import androidx.annotation.NonNull;
+
 public class Liga {
+
     private int id;
     private String nombre;
 
@@ -23,5 +26,11 @@ public class Liga {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return getNombre();
     }
 }
